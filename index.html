@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MANUFATURA AVANÇADA - INOVAÇÃO</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #e0f7fa; /* Verde água claro */
+        }
+        header {
+            background-color: #003d79; /* Azul escuro */
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        header h1, header h2 {
+            margin: 0;
+        }
+        header h1 {
+            font-size: 2em;
+            font-weight: bold;
+            color: #fff; /* Branco */
+        }
+        header h2 {
+            font-size: 1.5em;
+            font-weight: normal;
+            color: #fff; /* Branco */
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        .main-content {
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            margin-top: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .main-content:hover {
+            transform: scale(1.02);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+        h2 {
+            color: #003d79; /* Azul escuro */
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px 0;
+            color: #fff;
+            background-color: #003d79; /* Azul escuro */
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #005b99; /* Azul mais claro */
+        }
+        footer {
+            background-color: #003d79; /* Azul escuro */
+            color: #fff;
+            text-align: center;
+            padding: 10px 20px;
+            margin-top: 20px;
+        }
+        footer p {
+            margin: 0;
+        }
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .team-member {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #b2dfdb; /* Verde água claro */
+            border-left: 5px solid #00bfae; /* Verde água */
+        }
+        .semester-info {
+            padding: 20px;
+            background-color: #f0f0f0; /* Cinza claro */
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        .more-info {
+            display: none;
+            padding: 10px;
+            background-color: #f1f8f6; /* Verde água muito claro */
+            border: 1px solid #00bfae; /* Verde água */
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .show-more-btn {
+            cursor: pointer;
+            color: #00bfae; /* Verde água */
+            text-decoration: underline;
+            font-weight: bold;
+        }
+        .image-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .image-container img {
+            max-width: 400px;
+            height: auto;
+            border-radius: 8px;
+        }
+    </style>
+    <script>
+        function toggleMoreInfo() {
+            var moreInfo = document.getElementById("more-info");
+            var btn = document.getElementById("show-more-btn");
+            if (moreInfo.style.display === "none") {
+                moreInfo.style.display = "block";
+                btn.textContent = "Mostrar Menos";
+            } else {
+                moreInfo.style.display = "none";
+                btn.textContent = "Mostrar Mais";
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>MANUFATURA AVANÇADA</h1>
+            <h2>INOVIAÇÃO - TECHBUS</h2>
+        </div>
+    </header>
+    <div class="container">
+            <div class="image-container">
+                <img src="cps.png.png"> 
+            </div>
+            <div class="main-content">
+            <h2>Sobre o Projeto</h2>
+            <p>O grupo desenvolveu um sistema de display para ônibus com o objetivo de fornecer informações essenciais aos passageiros, como o destino e a quantidade de assentos ocupados. Foram criados mecanismos para contagem de passageiros e alteração de mensagens no display. O projeto incluiu o design e a integração de um display LCD 16x2 controlado por uma placa Arduino, visando fácil instalação em ônibus urbanos e fornecimento de informações precisas em tempo real, melhorando a experiência no transporte público.</p>
+            
+            <h2>Integrantes</h2>
+            <div class="team-member">
+                <strong>Design:</strong> Joyce Luiza dos Santos Mamede
+            </div>
+            <div class="team-member">
+                <strong>Design:</strong> Mariana Ament Marcheti
+            </div>
+            <div class="team-member">
+                <strong>Eletrônica:</strong> José Elias Alencar
+            </div>
+            <div class="team-member">
+                <strong>Programação:</strong> Daniel Souza de Almeida
+            </div>
+            <div class="team-member">
+                <strong>Eletrônica:</strong> Pedro Murilo Gói Veiga
+            </div>
+            <div class="team-member">
+                <strong>Documentação:</strong> Ana Beatriz de Souza
+            </div>
+
+            <h2>Sobre o 1º Semestre</h2>
+            <p>Já concluímos o 1º semestre com sucesso e a prova disso foi a feira de soluções. Utilizamos conhecimentos de várias matérias e tecnologias:</p>
+            <ul>
+                <li><strong>Sistemas Embarcados:</strong> Simulação e montagem de circuitos; Programação e prototipagem com Arduino em bancada e envio de mensagem/dados para monitor serial.</li>
+                <li><strong>Técnica de Leitura e Produção de Texto:</strong> Elaboração e formalização de documento.</li>
+                <li><strong>Desenho Técnico:</strong> Elaboração do desenho técnico do projeto e aprendizado sobre as normas ABNT.</li>
+                <li><strong>Algoritmos:</strong> Lógica de Programação e Fluxogramas.</li>
+                <li><strong>Tecnologias Utilizadas:</strong> Tinkercad (simulação de circuito), Pipefy (organização estilo "Kanban") e IDE Arduino (aplicação da programação no protótipo).</li>
+            </ul>
+
+            <h2 id="semester2">Novidades do 2º Semestre</h2>
+            <div class="semester-info" id="more-info">
+                <p>Estamos indo para o 2º semestre do curso com uma equipe de 6 pessoas: Ana Beatriz, Mariana, Joyce, José, Daniel e Pedro. Nossa primeira apresentação no 1º semestre foi um sucesso, comprovado pela feira de soluções. No 2º semestre, queremos aperfeiçoar o projeto com reconhecimento facial.</p>
+                <p><strong>Conhecimentos e Tecnologias:</strong> Continuaremos a aplicar os conhecimentos e tecnologias que usamos no 1º semestre, além de explorar novas técnicas para o aprimoramento do projeto.</p>
+            </div>
+            <span class="show-more-btn" id="show-more-btn" onclick="toggleMoreInfo()">Mostrar Mais</span>
+        </div>
+    </div>
+    <footer>
+        <p>Para mais informações, entre em contato:</p>
+        <a href="mailto:bs02112004@gmail.com">Email: bs02112004@gmail.com</a> | 
+        <a href="https://wa.me/5512987035975">WhatsApp: 12 987035975</a>
+    </footer>
+</body>
+</html>
+
+
